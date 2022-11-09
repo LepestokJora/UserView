@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED6D3242291C25130005FC6D /* BioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D3241291C25130005FC6D /* BioModel.swift */; };
+		ED6D3244291C34AD0005FC6D /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D3243291C34AD0005FC6D /* ResumeViewController.swift */; };
+		ED6D3246291C34E30005FC6D /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D3245291C34E30005FC6D /* BioViewController.swift */; };
+		ED6D324C291C46650005FC6D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6D324B291C46650005FC6D /* Extensions.swift */; };
 		ED8AEEEF291818DB00C0B070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AEEEE291818DB00C0B070 /* AppDelegate.swift */; };
 		ED8AEEF1291818DB00C0B070 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AEEF0291818DB00C0B070 /* SceneDelegate.swift */; };
 		ED8AEEF3291818DB00C0B070 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AEEF2291818DB00C0B070 /* LoginViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED6D3241291C25130005FC6D /* BioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioModel.swift; sourceTree = "<group>"; };
+		ED6D3243291C34AD0005FC6D /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
+		ED6D3245291C34E30005FC6D /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		ED6D324B291C46650005FC6D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED8AEEEB291818DB00C0B070 /* UserView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED8AEEEE291818DB00C0B070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED8AEEF0291818DB00C0B070 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED6D3247291C44210005FC6D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				ED8AEEF2291818DB00C0B070 /* LoginViewController.swift */,
+				ED8AEF022918274D00C0B070 /* WelcomeViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		ED6D3248291C445C0005FC6D /* User Info */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D3245291C34E30005FC6D /* BioViewController.swift */,
+				ED6D3243291C34AD0005FC6D /* ResumeViewController.swift */,
+			);
+			path = "User Info";
+			sourceTree = "<group>";
+		};
+		ED6D3249291C44900005FC6D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ED8AEEEE291818DB00C0B070 /* AppDelegate.swift */,
+				ED8AEEF0291818DB00C0B070 /* SceneDelegate.swift */,
+				ED6D324B291C46650005FC6D /* Extensions.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ED6D324A291C44B50005FC6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED6D3241291C25130005FC6D /* BioModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ED8AEEE2291818DB00C0B070 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +102,13 @@
 		ED8AEEED291818DB00C0B070 /* UserView */ = {
 			isa = PBXGroup;
 			children = (
-				ED8AEEEE291818DB00C0B070 /* AppDelegate.swift */,
-				ED8AEEF0291818DB00C0B070 /* SceneDelegate.swift */,
-				ED8AEEF2291818DB00C0B070 /* LoginViewController.swift */,
-				ED8AEEF4291818DB00C0B070 /* Main.storyboard */,
-				ED8AEF022918274D00C0B070 /* WelcomeViewController.swift */,
+				ED6D324A291C44B50005FC6D /* Models */,
+				ED6D3247291C44210005FC6D /* Auth */,
+				ED6D3248291C445C0005FC6D /* User Info */,
 				ED8AEEF7291818DD00C0B070 /* Assets.xcassets */,
+				ED8AEEF4291818DB00C0B070 /* Main.storyboard */,
 				ED8AEEF9291818DD00C0B070 /* LaunchScreen.storyboard */,
+				ED6D3249291C44900005FC6D /* App */,
 				ED8AEEFC291818DD00C0B070 /* Info.plist */,
 			);
 			path = UserView;
@@ -141,9 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6D3246291C34E30005FC6D /* BioViewController.swift in Sources */,
 				ED8AEEF3291818DB00C0B070 /* LoginViewController.swift in Sources */,
 				ED8AEF032918274D00C0B070 /* WelcomeViewController.swift in Sources */,
+				ED6D324C291C46650005FC6D /* Extensions.swift in Sources */,
 				ED8AEEEF291818DB00C0B070 /* AppDelegate.swift in Sources */,
+				ED6D3244291C34AD0005FC6D /* ResumeViewController.swift in Sources */,
+				ED6D3242291C25130005FC6D /* BioModel.swift in Sources */,
 				ED8AEEF1291818DB00C0B070 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
